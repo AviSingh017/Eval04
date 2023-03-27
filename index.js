@@ -13,7 +13,7 @@ const {userRoute} = require("./routes/users");
 const {postRoute} = require("./routes/post");
 app.use("/user",userRoute);
 
-app.use(auth);
+// app.use(auth);
 app.use("/posts",postRoute);
 
 app.get("/",(req,res)=>{
