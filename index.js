@@ -17,7 +17,7 @@ app.use(auth);
 app.use("/posts",postRoute);
 
 app.get("/",(req,res)=>{
-    res.status(200).send({"msg":"Welcome to Post Management backend!"});
+    res.send({"msg":"Welcome to Post Management backend!"});
 });
 
 app.listen(process.env.PORT,async()=>{
